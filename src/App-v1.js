@@ -36,52 +36,21 @@ export default function App() {
           </p>
 
           <div className="buttons">
-            <Button textColor="#fff" bgColor="#7950f2" onClick={handlePrev}>
-              <span>👈</span> Prev
-            </Button>
-            <Button textColor="#fff" bgColor="#7950f2" onClick={handleNext}>
-              Next <span>👉</span>
-            </Button>
-
-            {/* <Button
-              textColor="#fff"
-              bgColor="#7950f2"
-              onClick={handleNext}
-              text="Next"
-              emoji="👉"
-            /> */}
-
-            {/* <button
+            <button
+              style={{ backgroundColor: "#7950f2", color: "#fff" }}
+              onClick={handlePrev}
+            >
+              Prev
+            </button>
+            <button
               style={{ backgroundColor: "#7950f2", color: "#fff" }}
               onClick={handleNext}
             >
               Next
-            </button> */}
+            </button>
           </div>
         </div>
       )}
     </>
   );
 }
-
-function Button({ textColor, bgColor, onClick, children }) {
-  return (
-    <button
-      style={{ backgroundColor: bgColor, color: textColor }}
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  );
-}
-
-// function Button({ textColor, bgColor, onClick, text, emoji }) {
-//   return (
-//     <button
-//       style={{ backgroundColor: bgColor, color: textColor }}
-//       onClick={onClick}
-//     >
-//       <span>{emoji}</span> {text}
-//     </button>
-//   );
-// }
